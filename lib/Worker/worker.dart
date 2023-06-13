@@ -44,8 +44,8 @@ class Worker {
       wicon = weatherMainData["icon"].toString();
     } catch (e) {
       temp = "city not found";
-      humidity = "N/A";
-      airSpeed = "N/A";
+      humidity = "NA";
+      airSpeed = "NA";
       description = "City Not Found";
       main = "N/A";
       wicon = "09d";

@@ -55,30 +55,25 @@ class _LoadingState extends State<Loading> {
     }
     startApp(city);
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const SizedBox(height: 190),
-              Image.asset("images/mlogo.png", height: 260, width: 260),
-              const Text("Mausam 🌤️",
-                  style: TextStyle(
-                    fontSize: 32,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    letterSpacing: 2,
-                  )),
-              const SizedBox(
-                height: 27,
-              ),
-              const SpinKitThreeBounce(
-                color: Colors.white70,
-                size: 50.0,
-              ),
-            ],
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset("images/mlogo.png", height: 260, width: 260),
+          const Text("Mausam 🌤️",
+              style: TextStyle(
+                fontSize: 32,
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+                letterSpacing: 2,
+              )),
+          const SizedBox(
+            height: 25,
           ),
-        ),
+          const SpinKitThreeBounce(
+            color: Colors.white70,
+            size: 50.0,
+          ),
+        ],
       ),
       backgroundColor: Colors.blue[900],
     );
